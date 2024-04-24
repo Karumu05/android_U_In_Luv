@@ -1,22 +1,12 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-import { getInHouseNames } from "./api";
-import { useEffect, useState } from "react";
 import { Link } from "expo-router";
+import { StatusBar } from "expo-status-bar";
+import { Pressable, StyleSheet, Text, View } from "react-native";
 
-
-
-export default function App() {
-  const [peopleInHouse, setPeopleInHouse] = useState([]);
-
-
-  // useEffect(()=>{
-  //   setPeopleInHouse(["Calum", "Bob", "Jim"]);
-  // }, [peopleInHouse])
+export default function Page() {
+  const TESTPeopleInArray = ["calum", "Nigel", "Declan", "Sue"];
 
   return (
     <View style={styles.container}>
-      <Link href="widget"></Link>
       <View >
         <Text style={styles.title}>Who is in the house?</Text>
       </View>
